@@ -1,0 +1,2913 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1112.0850                               -->
+<workbook original-version='18.1' source-build='2024.3.1 (20243.24.1112.0850)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Heatmap />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Airbnb NYC 2019' inline='true' name='federated.07js94n1sle6mj16vjjpm10p2qas' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Airbnb NYC 2019' name='textscan.1f2uuqy1vabd8w1dl27cs1acr6zd'>
+            <connection class='textscan' directory='C:/Users/HuzzyCannon/Downloads' filename='Airbnb NYC 2019.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1f2uuqy1vabd8w1dl27cs1acr6zd' name='Airbnb NYC 2019.csv' table='[Airbnb NYC 2019#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='name' ordinal='1' />
+            <column datatype='integer' name='host_id' ordinal='2' />
+            <column datatype='string' name='host_name' ordinal='3' />
+            <column datatype='string' name='neighbourhood_group' ordinal='4' />
+            <column datatype='string' name='neighbourhood' ordinal='5' />
+            <column datatype='real' name='latitude' ordinal='6' />
+            <column datatype='real' name='longitude' ordinal='7' />
+            <column datatype='string' name='room_type' ordinal='8' />
+            <column datatype='integer' name='price' ordinal='9' />
+            <column datatype='integer' name='minimum_nights' ordinal='10' />
+            <column datatype='integer' name='number_of_reviews' ordinal='11' />
+            <column datatype='date' name='last_review' ordinal='12' />
+            <column datatype='real' name='reviews_per_month' ordinal='13' />
+            <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+            <column datatype='integer' name='availability_365' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[host_id]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>host_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[host_name]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>host_name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighbourhood_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighbourhood_group]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>neighbourhood_group</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighbourhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighbourhood]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>neighbourhood</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>room_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[room_type]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>room_type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minimum_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[minimum_nights]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>minimum_nights</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_reviews]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>number_of_reviews</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_review</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[last_review]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>last_review</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews_per_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[reviews_per_month]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>reviews_per_month</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calculated_host_listings_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calculated_host_listings_count]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>calculated_host_listings_count</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>availability_365</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[availability_365]</local-name>
+            <parent-name>[Airbnb NYC 2019.csv]</parent-name>
+            <remote-alias>availability_365</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total hosts' datatype='string' name='[Calculation_203224966800216068]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Total hosts&quot;' />
+      </column>
+      <column caption='Total neighbourhoods in NYC' datatype='string' name='[Calculation_203224966800592901]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Total neighbourhoods in NYC&quot;' />
+      </column>
+      <column caption='Avg. Reviews per month' datatype='string' name='[Calculation_203224966800920582]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Avg. Reviews per month&quot;' />
+      </column>
+      <column caption='Total Reviews' datatype='string' name='[Calculation_203224966801358855]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Total Reviews&quot;' />
+      </column>
+      <column caption='Airbnb NYC 2019.csv' datatype='table' name='[__tableau_internal_object_id__].[Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1]' role='measure' type='quantitative' />
+      <column caption='Availability 365' datatype='integer' name='[availability_365]' role='measure' type='quantitative' />
+      <column caption='Calculated Host Listings Count' datatype='integer' name='[calculated_host_listings_count]' role='measure' type='quantitative' />
+      <column caption='Host Id' datatype='integer' name='[host_id]' role='dimension' type='ordinal' />
+      <column caption='Host Name' datatype='string' name='[host_name]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Last Review' datatype='date' name='[last_review]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Minimum Nights' datatype='integer' name='[minimum_nights]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+      <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
+      <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      <column caption='Reviews Per Month' datatype='real' name='[reviews_per_month]' role='dimension' type='quantitative' />
+      <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+      <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
+      <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:room_type:nk]' palette='winter_10_0' type='palette'>
+            <map to='#90728f'>
+              <bucket>&quot;Entire home/apt&quot;</bucket>
+            </map>
+            <map to='#9d9b3d'>
+              <bucket>&quot;Shared room&quot;</bucket>
+            </map>
+            <map to='#b9a0b4'>
+              <bucket>&quot;Private room&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:neighbourhood_group:nk]' palette='summer_10_0' type='palette'>
+            <map to='#00a2b3'>
+              <bucket>&quot;Staten Island&quot;</bucket>
+            </map>
+            <map to='#8fb202'>
+              <bucket>&quot;Bronx&quot;</bucket>
+            </map>
+            <map to='#b9ca5d'>
+              <bucket>&quot;Brooklyn&quot;</bucket>
+            </map>
+            <map to='#cf3e53'>
+              <bucket>&quot;Manhattan&quot;</bucket>
+            </map>
+            <map to='#f1788d'>
+              <bucket>&quot;Queens&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Airbnb NYC 2019.csv' id='Airbnb NYC 2019.csv_4E64F86816EB4C6186BCDE998E4AC8D1'>
+            <properties context=''>
+              <relation connection='textscan.1f2uuqy1vabd8w1dl27cs1acr6zd' name='Airbnb NYC 2019.csv' table='[Airbnb NYC 2019#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='name' ordinal='1' />
+                  <column datatype='integer' name='host_id' ordinal='2' />
+                  <column datatype='string' name='host_name' ordinal='3' />
+                  <column datatype='string' name='neighbourhood_group' ordinal='4' />
+                  <column datatype='string' name='neighbourhood' ordinal='5' />
+                  <column datatype='real' name='latitude' ordinal='6' />
+                  <column datatype='real' name='longitude' ordinal='7' />
+                  <column datatype='string' name='room_type' ordinal='8' />
+                  <column datatype='integer' name='price' ordinal='9' />
+                  <column datatype='integer' name='minimum_nights' ordinal='10' />
+                  <column datatype='integer' name='number_of_reviews' ordinal='11' />
+                  <column datatype='date' name='last_review' ordinal='12' />
+                  <column datatype='real' name='reviews_per_month' ordinal='13' />
+                  <column datatype='integer' name='calculated_host_listings_count' ordinal='14' />
+                  <column datatype='integer' name='availability_365' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_2BA1811B45224C478A08D93AD3C6487A]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Neighbourhood Group' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='12'>Average price in the neighbourhood-room type:</run>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='12' italic='true'><![CDATA[<[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb NYC 2019' name='federated.07js94n1sle6mj16vjjpm10p2qas' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.07js94n1sle6mj16vjjpm10p2qas'>
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:room_type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:longitude:qk]' field-type='quantitative' max='-8147020.6617724076' min='-8300864.6582716554' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:latitude:qk]' field-type='quantitative' max='5036359.8638968142' min='4936699.9203430731' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#555555' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Heatmap' />
+            <encodings>
+              <color column='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:price:qk]' />
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' />
+              <lod column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <encoding attr='density-color' palette='density_light_multicolor' type='interpolated' />
+                <format attr='density-kernel-size' value='1.1974033117294312' />
+                <format attr='density-intensity' value='0.44696044921875' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='477' />
+                <format attr='maxwidth' value='477' />
+                <format attr='minheight' value='309' />
+                <format attr='maxheight' value='309' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:latitude:qk]</rows>
+        <cols>[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{99A2C6E8-C093-47D1-81A4-EB8BC49DF065}' />
+    </worksheet>
+    <worksheet name='Sheet 10'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb NYC 2019' name='federated.07js94n1sle6mj16vjjpm10p2qas' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07js94n1sle6mj16vjjpm10p2qas'>
+            <column caption='Total hosts' datatype='string' name='[Calculation_203224966800216068]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Total hosts&quot;' />
+            </column>
+            <column-instance column='[host_id]' derivation='CountD' name='[ctd:host_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Host Id' datatype='integer' name='[host_id]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_203224966800216068]' derivation='None' name='[none:Calculation_203224966800216068:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='105' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' data-class='subtotal' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#aa0000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:Calculation_203224966800216068:nk]' />
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[ctd:host_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F703A546-B4FF-42A3-AFFB-933BF95076A0}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb NYC 2019' name='federated.07js94n1sle6mj16vjjpm10p2qas' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07js94n1sle6mj16vjjpm10p2qas'>
+            <column caption='Total neighbourhoods in NYC' datatype='string' name='[Calculation_203224966800592901]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Total neighbourhoods in NYC&quot;' />
+            </column>
+            <column-instance column='[neighbourhood]' derivation='CountD' name='[ctd:neighbourhood:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_203224966800592901]' derivation='None' name='[none:Calculation_203224966800592901:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='418' />
+            <format attr='height' value='39' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#aa0000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:Calculation_203224966800592901:nk]' />
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[ctd:neighbourhood:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{24ADCA40-8841-4EF6-B3EB-9991735E2945}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb NYC 2019' name='federated.07js94n1sle6mj16vjjpm10p2qas' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07js94n1sle6mj16vjjpm10p2qas'>
+            <column caption='Avg. Reviews per month' datatype='string' name='[Calculation_203224966800920582]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Avg. Reviews per month&quot;' />
+            </column>
+            <column-instance column='[reviews_per_month]' derivation='Avg' name='[avg:reviews_per_month:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_203224966800920582]' derivation='None' name='[none:Calculation_203224966800920582:nk]' pivot='key' type='nominal' />
+            <column caption='Reviews Per Month' datatype='real' name='[reviews_per_month]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='169' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#aa0000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:Calculation_203224966800920582:nk]' />
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:reviews_per_month:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0A6696DB-3131-40CB-BB55-C1751C27E063}' />
+    </worksheet>
+    <worksheet name='Sheet 13'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb NYC 2019' name='federated.07js94n1sle6mj16vjjpm10p2qas' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07js94n1sle6mj16vjjpm10p2qas'>
+            <column caption='Total Reviews' datatype='string' name='[Calculation_203224966801358855]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Total Reviews&quot;' />
+            </column>
+            <column-instance column='[Calculation_203224966801358855]' derivation='None' name='[none:Calculation_203224966801358855:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='97' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#aa0000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:Calculation_203224966801358855:nk]' />
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[sum:number_of_reviews:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B384536A-77D5-4051-870C-9E91EAF2C09B}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='12'>total bookings by name and neighbourhood group- room type-</run>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='12' italic='true'><![CDATA[<[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb NYC 2019' name='federated.07js94n1sle6mj16vjjpm10p2qas' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07js94n1sle6mj16vjjpm10p2qas'>
+            <column-instance column='[name]' derivation='Count' name='[cnt:name:qk]' pivot='key' type='quantitative' />
+            <column caption='Last Review' datatype='date' name='[last_review]' role='dimension' type='ordinal' />
+            <column-instance column='[last_review]' derivation='Month' name='[mn:last_review:ok]' pivot='key' type='ordinal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07js94n1sle6mj16vjjpm10p2qas].[mn:last_review:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:last_review:ok]' />
+              <groupfilter function='member' level='[mn:last_review:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:room_type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]</column>
+            <column>[federated.07js94n1sle6mj16vjjpm10p2qas].[mn:last_review:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[cnt:name:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[cnt:name:qk]' scope='rows' value='' />
+            <format attr='title' class='1' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[cnt:name:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' data-class='subtotal' value='solid' />
+            <format attr='border-color' data-class='subtotal' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[mn:last_review:ok]' value='iLLL' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#666666' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#ffffff' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#666666' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='312' />
+                <format attr='maxheight' value='312' />
+                <format attr='minwidth' value='492' />
+                <format attr='maxwidth' value='492' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.07js94n1sle6mj16vjjpm10p2qas].[cnt:name:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.07js94n1sle6mj16vjjpm10p2qas].[cnt:name:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[cnt:name:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.20790055394172668' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.07js94n1sle6mj16vjjpm10p2qas].[cnt:name:qk] + [federated.07js94n1sle6mj16vjjpm10p2qas].[cnt:name:qk])</rows>
+        <cols>[federated.07js94n1sle6mj16vjjpm10p2qas].[mn:last_review:ok]</cols>
+      </table>
+      <simple-id uuid='{0FE8338C-DF8F-492D-87CD-BDC7C8DD5802}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>Total neighbourhoods by neighbourhood group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb NYC 2019' name='federated.07js94n1sle6mj16vjjpm10p2qas' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07js94n1sle6mj16vjjpm10p2qas'>
+            <column caption='0' datatype='integer' name='[Calculation_203224966772908035]' role='measure' type='quantitative' user:unnamed='Sheet 3'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column-instance column='[neighbourhood]' derivation='Count' name='[cnt:neighbourhood:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='Count' name='[pcto:cnt:neighbourhood:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_203224966772908035]' derivation='Sum' name='[sum:Calculation_203224966772908035:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[sum:Calculation_203224966772908035:qk]' field-type='quantitative' fold='true' major-origin='0' major-show='false' major-spacing='1' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[sum:Calculation_203224966772908035:qk]' scope='rows' value='' />
+            <encoding attr='space' class='0' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[sum:Calculation_203224966772908035:qk]' field-type='quantitative' major-origin='0' major-show='false' major-spacing='1' scope='rows' type='space' />
+            <format attr='title' class='1' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[sum:Calculation_203224966772908035:qk]' scope='rows' value='' />
+            <format attr='width' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[sum:Calculation_203224966772908035:qk]' value='34' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='208' />
+            <format attr='cell-h' value='208' />
+            <format attr='cell' value='26' />
+            <format attr='cell-q' value='130' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='height-header' value='10' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#666666' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='244' />
+                <format attr='maxheight' value='244' />
+                <format attr='minwidth' value='208' />
+                <format attr='maxwidth' value='208' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.07js94n1sle6mj16vjjpm10p2qas].[sum:Calculation_203224966772908035:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' />
+              <size column='[federated.07js94n1sle6mj16vjjpm10p2qas].[cnt:neighbourhood:qk]' />
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' />
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[pcto:cnt:neighbourhood:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.07js94n1sle6mj16vjjpm10p2qas].[sum:Calculation_203224966772908035:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='0.71364641189575195' />
+                <format attr='mark-color' value='#666666' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.07js94n1sle6mj16vjjpm10p2qas].[sum:Calculation_203224966772908035:qk] + [federated.07js94n1sle6mj16vjjpm10p2qas].[sum:Calculation_203224966772908035:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{3B1E3FE3-7BD4-4D76-AFD1-26A912C2A6A8}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Top 10 hosts by total reviews</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb NYC 2019' name='federated.07js94n1sle6mj16vjjpm10p2qas' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07js94n1sle6mj16vjjpm10p2qas'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:ok]' pivot='key' type='ordinal' />
+            <column caption='Host Id' datatype='integer' name='[host_id]' role='dimension' type='ordinal' />
+            <column caption='Host Name' datatype='string' name='[host_name]' role='dimension' type='nominal' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
+            <column-instance column='[host_id]' derivation='None' name='[none:host_id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[host_name]' derivation='None' name='[none:host_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:host_id:ok]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([number_of_reviews])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:host_id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.07js94n1sle6mj16vjjpm10p2qas].[none:host_id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[sum:number_of_reviews:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='text-align' value='center' />
+            <format attr='cell-w' value='54' />
+            <format attr='cell-h' value='18' />
+            <format attr='cell' value='18' />
+            <format attr='cell-q' value='90' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' value='140' />
+            <format attr='width' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood:nk]' value='140' />
+            <format attr='width' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:host_name:nk]' value='164' />
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='text-format' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:price:ok]' value='c&quot;$&quot;#,##0.00;-&quot;$&quot;#,##0.00' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#666666' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-level' scope='rows' value='3' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[sum:number_of_reviews:qk]' />
+              <lod column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:host_id:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.07js94n1sle6mj16vjjpm10p2qas].[none:host_name:nk] / ([federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk] / ([federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood:nk] / [federated.07js94n1sle6mj16vjjpm10p2qas].[avg:price:ok])))</rows>
+        <cols>[federated.07js94n1sle6mj16vjjpm10p2qas].[sum:number_of_reviews:qk]</cols>
+      </table>
+      <simple-id uuid='{7C64F175-401D-4427-8C74-92022CBB6A50}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='12'>total booking by neighbourhood group and room type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb NYC 2019' name='federated.07js94n1sle6mj16vjjpm10p2qas' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07js94n1sle6mj16vjjpm10p2qas'>
+            <column-instance column='[name]' derivation='Count' name='[cnt:name:qk]' pivot='key' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:room_type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.07js94n1sle6mj16vjjpm10p2qas].[cnt:name:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[cnt:name:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='cols' value='1' />
+            <format attr='border-color' data-class='total' scope='cols' value='#ffffff' />
+            <format attr='border-style' data-class='total' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#898989' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]</rows>
+        <cols>[federated.07js94n1sle6mj16vjjpm10p2qas].[cnt:name:qk]</cols>
+      </table>
+      <simple-id uuid='{EB324C6A-233D-4DD5-8FC6-2074447B1191}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='14'>Total reviews by year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb NYC 2019' name='federated.07js94n1sle6mj16vjjpm10p2qas' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07js94n1sle6mj16vjjpm10p2qas'>
+            <column caption='Last Review' datatype='date' name='[last_review]' role='dimension' type='ordinal' />
+            <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+            <column-instance column='[number_of_reviews]' derivation='Sum' name='[sum:number_of_reviews:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[last_review]' derivation='Year' name='[yr:last_review:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07js94n1sle6mj16vjjpm10p2qas].[yr:last_review:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:last_review:ok]' />
+              <groupfilter function='member' level='[yr:last_review:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.07js94n1sle6mj16vjjpm10p2qas].[yr:last_review:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[sum:number_of_reviews:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-color' scope='cols' value='#ffffff' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' data-class='total' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='background-color' data-class='subtotal' value='#ffffff' />
+            <format attr='border-width' data-class='total' scope='cols' value='1' />
+            <format attr='border-color' data-class='total' scope='cols' value='#ffffff' />
+            <format attr='border-style' data-class='total' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#666666' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[sum:number_of_reviews:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07js94n1sle6mj16vjjpm10p2qas].[sum:number_of_reviews:qk]</rows>
+        <cols>[federated.07js94n1sle6mj16vjjpm10p2qas].[yr:last_review:ok]</cols>
+      </table>
+      <simple-id uuid='{832DE745-9C40-4E14-BF92-50299E43F38B}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='14'>average price by neighbourhood group type-room type: </run>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='14' italic='true'><![CDATA[<[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb NYC 2019' name='federated.07js94n1sle6mj16vjjpm10p2qas' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07js94n1sle6mj16vjjpm10p2qas'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:room_type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:price:qk]' value='C1033%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:price:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#666666' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:price:qk]' />
+              <color column='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:price:qk]' />
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' />
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{34881694-FDFE-449C-AF36-442A980546CB}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='14'>Average price in the neighbourhoods- neighbourhood group: </run>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='14' italic='true'><![CDATA[<[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]>]]></run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb NYC 2019' name='federated.07js94n1sle6mj16vjjpm10p2qas' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07js94n1sle6mj16vjjpm10p2qas'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighbourhood' datatype='string' name='[neighbourhood]' role='dimension' type='nominal' />
+            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood]' derivation='None' name='[none:neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]'>
+            <groupfilter function='member' level='[none:neighbourhood_group:nk]' member='&quot;Staten Island&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:price:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:price:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:price:qk]' value='C1033%' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#666666' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='title' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' value='Neighbourhood Group'>
+              <formatted-text>
+                <run fontalignment='0'>Neighbourhood Group</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='text-align' value='center' />
+            <format attr='font-size' value='8' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood:nk]</rows>
+        <cols>[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:price:qk]</cols>
+      </table>
+      <simple-id uuid='{CF5A057E-E9FF-4053-8778-9496A65C4BED}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='14'>Average reviews by room type and neighbourhood group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Airbnb NYC 2019' name='federated.07js94n1sle6mj16vjjpm10p2qas' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07js94n1sle6mj16vjjpm10p2qas'>
+            <column-instance column='[reviews_per_month]' derivation='Avg' name='[avg:reviews_per_month:qk]' pivot='key' type='quantitative' />
+            <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
+            <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+            <column caption='Reviews Per Month' datatype='real' name='[reviews_per_month]' role='dimension' type='quantitative' />
+            <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:reviews_per_month:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:reviews_per_month:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#666666' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:reviews_per_month:qk]' />
+              <text column='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:reviews_per_month:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#ffffff67' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]</rows>
+        <cols>[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]</cols>
+      </table>
+      <simple-id uuid='{9CF17BAF-4AE5-46E0-907B-AE414458F93C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#666666' />
+        </style-rule>
+      </style>
+      <size maxheight='1000' maxwidth='1900' minheight='1000' minwidth='1900' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Airbnb NYC 2019' name='federated.07js94n1sle6mj16vjjpm10p2qas' />
+      </datasources>
+      <datasource-dependencies datasource='federated.07js94n1sle6mj16vjjpm10p2qas'>
+        <column caption='Neighbourhood Group' datatype='string' name='[neighbourhood_group]' role='dimension' type='nominal' />
+        <column-instance column='[neighbourhood_group]' derivation='None' name='[none:neighbourhood_group:nk]' pivot='key' type='nominal' />
+        <column-instance column='[room_type]' derivation='None' name='[none:room_type:nk]' pivot='key' type='nominal' />
+        <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98400' id='7' param='horz' type-v2='layout-flow' w='99158' x='421' y='800'>
+            <zone h='98400' id='5' type-v2='layout-basic' w='80684' x='421' y='800'>
+              <zone h='30297' id='9' name='Sheet 2' w='34688' x='46417' y='800'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='33475' id='12' name='Sheet 3' w='16153' x='421' y='34271'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37804' id='13' name='Sheet 4' w='34688' x='46417' y='61396'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='31454' id='18' name='Sheet 9' w='45996' x='421' y='67746'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='30299' id='26' name='Sheet 5' w='34688' x='46417' y='31097'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='33471' id='29' name='Sheet 1' w='22995' x='421' y='800'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='33475' id='31' name='Sheet 7' w='29843' x='16574' y='34271'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7296' id='34' name='Sheet 10' w='7841' x='38576' y='800'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='26175' id='35' name='Sheet 11' w='23001' x='23416' y='8096'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7296' id='36' name='Sheet 12' w='8844' x='23416' y='800'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7296' id='37' name='Sheet 13' w='6316' x='32260' y='800'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='351' h='98400' id='16' is-fixed='true' type-v2='layout-basic' w='18474' x='81105' y='800'>
+              <zone h='47904' id='17' param='vert' type-v2='layout-flow' w='18474' x='81105' y='51296'>
+                <zone h='47904' id='25' name='Sheet 6' w='18474' x='81105' y='51296'>
+                  <layout-cache minheight='176' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='50496' id='20' name='Sheet 8' w='18474' x='81105' y='800'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='5400' id='21' mode='dropdown' name='Sheet 8' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' type-v2='filter' w='9368' x='34737' y='29100' />
+        <zone h='12000' id='11' name='Sheet 2' pane-specification-id='1' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' type-v2='color' w='7368' x='69579' y='10400' />
+        <zone h='7900' id='27' name='Sheet 5' pane-specification-id='0' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' type-v2='color' w='7368' x='66579' y='52500' />
+        <zone h='4100' id='30' mode='dropdown' name='Sheet 1' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' type-v2='filter' w='9211' x='24947' y='29500' />
+        <zone h='14700' id='33' is-scaled='1' param='C:/Users/HuzzyCannon/Downloads/airbnb3.png' type-v2='bitmap' w='19211' x='25000' y='14300' />
+      </zones>
+      <devicelayouts>
+        <devicelayout active='true' name='Desktop'>
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98400' id='7' param='horz' type-v2='layout-flow' w='99158' x='421' y='800'>
+                <zone h='98400' id='5' type-v2='layout-basic' w='80684' x='421' y='800'>
+                  <zone h='30294' id='9' name='Sheet 2' w='34690' x='46415' y='800'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='33475' id='12' name='Sheet 3' w='16151' x='421' y='34269'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='37807' id='13' name='Sheet 4' w='34690' x='46415' y='61393'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='31456' id='18' name='Sheet 9' w='45994' x='421' y='67744'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='30299' id='26' name='Sheet 5' w='34690' x='46415' y='31094'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='33469' id='29' name='Sheet 1' w='22993' x='421' y='800'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='33475' id='31' name='Sheet 7' w='29843' x='16572' y='34269'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='7293' id='34' name='Sheet 10' w='7841' x='38574' y='800'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='26176' id='35' name='Sheet 11' w='23001' x='23414' y='8093'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='7293' id='36' name='Sheet 12' w='8844' x='23414' y='800'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='7293' id='37' name='Sheet 13' w='6316' x='32258' y='800'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='351' h='98400' id='16' is-fixed='true' type-v2='layout-basic' w='18474' x='81105' y='800'>
+                  <zone h='47907' id='17' param='vert' type-v2='layout-flow' w='18474' x='81105' y='51293'>
+                    <zone h='47907' id='25' name='Sheet 6' w='18474' x='81105' y='51293'>
+                      <layout-cache minheight='176' type-h='scalable' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='50493' id='20' name='Sheet 8' w='18474' x='81105' y='800'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+            <zone h='5400' id='21' mode='dropdown' name='Sheet 8' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' type-v2='filter' w='9368' x='34737' y='29100' />
+            <zone h='12000' id='11' name='Sheet 2' pane-specification-id='1' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' type-v2='color' w='7368' x='69579' y='10400' />
+            <zone h='7900' id='27' name='Sheet 5' pane-specification-id='0' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' type-v2='color' w='7368' x='66579' y='52500' />
+            <zone h='4100' id='30' mode='dropdown' name='Sheet 1' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' type-v2='filter' w='9211' x='24947' y='29500' />
+            <zone h='14700' id='33' is-scaled='1' param='C:/Users/HuzzyCannon/Downloads/airbnb3.png' type-v2='bitmap' w='19211' x='25000' y='14300' />
+          </zones>
+        </devicelayout>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='3500' minheight='3500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='41' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='40' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone h='4100' id='30' mode='dropdown' name='Sheet 1' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' type-v2='filter' w='9211' x='24947' y='29500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33471' id='29' is-fixed='true' name='Sheet 1' w='22995' x='421' y='800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='7296' id='36' is-fixed='true' name='Sheet 12' w='8844' x='23416' y='800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='7296' id='37' is-fixed='true' name='Sheet 13' w='6316' x='32260' y='800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='7296' id='34' is-fixed='true' name='Sheet 10' w='7841' x='38576' y='800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='30297' id='9' is-fixed='true' name='Sheet 2' w='34688' x='46417' y='800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12000' id='11' name='Sheet 2' pane-specification-id='1' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' type-v2='color' w='7368' x='69579' y='10400'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5400' id='21' mode='dropdown' name='Sheet 8' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' type-v2='filter' w='9368' x='34737' y='29100'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50496' id='20' is-fixed='true' name='Sheet 8' w='18474' x='81105' y='800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='254' h='26175' id='35' is-fixed='true' name='Sheet 11' w='23001' x='23416' y='8096'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='147' h='14700' id='33' is-fixed='true' is-scaled='1' param='C:/Users/HuzzyCannon/Downloads/airbnb3.png' type-v2='bitmap' w='19211' x='25000' y='14300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='30299' id='26' is-fixed='true' name='Sheet 5' w='34688' x='46417' y='31097'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7900' id='27' name='Sheet 5' pane-specification-id='0' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' type-v2='color' w='7368' x='66579' y='52500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33475' id='12' is-fixed='true' name='Sheet 3' w='16153' x='421' y='34271'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='33475' id='31' is-fixed='true' name='Sheet 7' w='29843' x='16574' y='34271'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47904' id='25' is-fixed='true' name='Sheet 6' w='18474' x='81105' y='51296'>
+                  <layout-cache minheight='176' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37804' id='13' is-fixed='true' name='Sheet 4' w='34688' x='46417' y='61396'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31454' id='18' is-fixed='true' name='Sheet 9' w='45996' x='421' y='67746'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A2CD6DB5-3705-41F2-8E26-B6C166E1B081}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='136'>
+            <card mode='radiolist' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{414AA56D-38AB-42F5-A7A4-109459118935}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{247A6A7A-A3C8-4285-BEE9-8841556EB58A}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A3CFB6E7-D512-425F-9B2E-F13019FEBB05}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='135'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{79A5030D-52ED-4BF7-99DF-DBBC34D60CBE}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{71DD5801-0D27-4714-9E3F-0ED0A14DE619}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{EBF447F8-E350-46A2-9CA0-194ACF8F4AB0}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:room_type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:price:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D35445E8-0B7A-4BDD-8E2A-73D19E6A13E3}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[none:neighbourhood_group:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{33B65094-87E2-405B-93C0-71BF9B9FC638}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07js94n1sle6mj16vjjpm10p2qas].[avg:reviews_per_month:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4FBD2579-EFB7-46B7-9B68-5D4D7F839348}' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AC98E6DB-8FD6-44EE-8611-6B2558278E75}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B1E0A5AE-E0D3-4813-8DE7-374F33C65F5B}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{081A0B99-8A52-40DB-986C-E6386AD8EF41}' />
+    </window>
+    <window class='worksheet' name='Sheet 13'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{30CD4545-22F2-4018-9AD7-AE40A0A1BBCD}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 10'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 11' />
+        <viewpoint name='Sheet 12'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 13'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 7'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 8' />
+        <viewpoint name='Sheet 9'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='30' />
+      <device-preview visible='true'>
+        <device name='Medium Desktop Monitor' type='Desktop' />
+      </device-preview>
+      <simple-id uuid='{B284E23D-2A18-4F0C-A223-3A96ED9D282B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
